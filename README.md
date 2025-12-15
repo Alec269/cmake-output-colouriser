@@ -79,7 +79,8 @@ If you want to modify and build the **extension** yourself:
 <!-- end list -->
 
 ```sh
-git clone [https://github.com/YourUsername/cmake-output-colorizer.git](https://github.com/YourUsername/cmake-output-colorizer.git)     cd cmake-output-colorizer
+git clone --depth 1 https://github.com/Alec269/cmake-output-colouriser.git     
+cd cmake-output-colouriser
 ```
 
 2. Install **dependencies**:
