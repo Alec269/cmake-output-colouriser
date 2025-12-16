@@ -2,7 +2,7 @@
    "name": "cmake-output-colouriser",
    "displayName": "CMake Output Colouriser",
    "description": "Adds syntax highlighting and colourisation to CMake build output and logs for better readability.",
-   "version": "1.0.0+1",
+   "version": "1.0.1",
    "publisher": "Alec269",
    "icon": "images/icon.png",
    "repository": {
