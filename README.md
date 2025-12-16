@@ -6,7 +6,7 @@
 
 Adds intelligent syntax highlighting and **colourisation** to CMake build output and logs for enhanced readability. Quickly spot **Errors**, **Warnings**, **Successes**, and other key information directly in your VS Code output panes.
 
-## ✨ Features
+## Features
 
 * **Error Highlighting:** Highlights entire lines **containing** keywords like `error`, `failed`, `fatal`, and `exception` in **bright red** with a subtle background.
 * **Warning Highlighting:** Highlights lines with `warning` or `warn` in **bright orange/yellow**.
@@ -17,7 +17,7 @@ Adds intelligent syntax highlighting and **colourisation** to CMake build output
 * **Timestamps & Percentages:** **Colours** build progress indicators (`[ 50%]`) and timestamps (`HH:MM:SS`) for easy tracking.
 * **Real-time Decoration:** Automatically **colourises** output as it appears in the active **editor** or output pane.
 
-## 🚀 Usage
+## Usage
 
 The **extension** is designed to work automatically in any editor or output panel that is recognised as **containing** log output, specifically targeting CMake and build-related log messages.
 
@@ -34,7 +34,7 @@ This **extension** has only been tested with **Microsoft CMake Tools** **extensi
 
 -----
 
-## 🖼️ Examples
+## Examples
 
 Here is how the **extension** transforms raw build output into an easy-to-read log, demonstrating success, failure, and granular highlighting.
 
@@ -58,7 +58,7 @@ Clear highlighting for fatal errors and failed exit **codes**.
 
 -----
 
-## ⚙️ **Configuration**
+## **Configuration**
 
 You can manage the **extension's** **behaviour** in your VS Code settings (`settings.json`):
 
@@ -70,7 +70,7 @@ You can manage the **extension's** **behaviour** in your VS Code settings (`sett
 
 **Currently**, **customisation** is not implemented.
 
-## 🛠 Building the Project
+## Building the Project
 
 If you want to modify and build the **extension** yourself:
 
@@ -101,6 +101,6 @@ npm run compile
 
 4. Run from VS Code: Press **F5** in VS Code to launch a new **Extension** Development Host window with the **extension** loaded.
 
-## 📝 License
+## License
 
 This project is licensed under the **MIT License**.

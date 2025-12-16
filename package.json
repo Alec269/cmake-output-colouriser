@@ -1,77 +1,76 @@
 {
-  "name": "cmake-output-colouriser",
-  "displayName": "CMake Output Colouriser",
-  "description": "Adds syntax highlighting and colourisation to CMake build output and logs for better readability.",
-  "version": "1.0.0",
-  "publisher": "Alec269",
-  "icon": "icon.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Alec269/cmake-output-colouriser.git"
-  },
-    "bugs": {
-        "url": "https://github.com/Alec269/cmake-output-colouriser/issues"
-    },
-    "homepage": "https://github.com/Alec269/cmake-output-colouriser#readme",
-  "engines": {
-    "vscode": "^1.70.0"
-  },
-  "categories": [
-    "Other",
-    "Programming Languages",
-    "Themes"
-  ],
-  "keywords": [
-    "cmake",
-    "build",
-    "output",
-    "log",
-    "colorizer",
-    "highlighting",
-    "c++"
-  ],
-  "activationEvents": [
-    "onLanguage:log",
-    "onStartupFinished"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "languages": [
-      {
-        "id": "cmake-build-log",
-        "aliases": [
-          "CMake Build Log"
-        ]
+   "name": "cmake-output-colouriser",
+   "displayName": "CMake Output Colouriser",
+   "description": "Adds syntax highlighting and colourisation to CMake build output and logs for better readability.",
+   "version": "1.0.0+1",
+   "publisher": "Alec269",
+   "icon": "images/icon.png",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Alec269/cmake-output-colouriser.git"
+   },
+   "bugs": {
+      "url": "https://github.com/Alec269/cmake-output-colouriser/issues"
+   },
+   "homepage": "https://github.com/Alec269/cmake-output-colouriser#readme",
+   "engines": {
+      "vscode": "^1.70.0"
+   },
+   "categories": [
+      "Other",
+      "Programming Languages",
+      "Themes"
+   ],
+   "keywords": [
+      "cmake",
+      "build",
+      "output",
+      "log",
+      "colouriser",
+      "highlighting",
+      "c++"
+   ],
+   "activationEvents": [
+      "onLanguage:log",
+      "onStartupFinished"
+   ],
+   "main": "./out/extension.js",
+   "contributes": {
+      "languages": [
+         {
+            "id": "cmake-build-log",
+            "aliases": [
+               "CMake Build Log"
+            ]
+         }
+      ],
+      "grammars": [
+         {
+            "language": "cmake-build-log",
+            "scopeName": "text.cmake-build-log",
+            "path": "./syntaxes/cmake-build-log.tmLanguage.json"
+         }
+      ],
+      "configuration": {
+         "title": "CMake Output Colorizer",
+         "properties": {
+            "cmakeColorizer.enable": {
+               "type": "boolean",
+               "default": true,
+               "description": "Enable CMake output colourisation. When disabled, the extension will not apply decorations."
+            }
+         }
       }
-    ],
-    "grammars": [
-      {
-        "language": "cmake-build-log",
-        "scopeName": "text.cmake-build-log",
-        "path": "./syntaxes/cmake-build-log.tmLanguage.json"
-      }
-    ],
-    "configuration": {
-      "title": "CMake Output Colorizer",
-      "properties": {
-        "cmakeColorizer.enable": {
-          "type": "boolean",
-          "default": true,
-          "description": "Enable CMake output colourisation. When disabled, the extension will not apply decorations."
-        }
-      }
-    }
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.70.0",
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
-  },
-
-  "license": "MIT"
+   },
+   "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./",
+      "watch": "tsc -watch -p ./"
+   },
+   "devDependencies": {
+      "@types/vscode": "^1.70.0",
+      "@types/node": "^20.0.0",
+      "typescript": "^5.0.0"
+   },
+   "license": "MIT"
 }

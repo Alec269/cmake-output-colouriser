@@ -9,3 +9,9 @@
 - Detailed highlighting for file paths, commands, timestamps, and percentages.
 - `cmakeColorizer.enable` setting to toggle the extension functionality.
 - Activation on `onLanguage:log` and `onStartupFinished`.
+
+## [1.0.0+1] - 2025-12-16
+
+### Added
+
+- Minor Formatting changes within README.md  
